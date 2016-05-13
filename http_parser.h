@@ -356,6 +356,9 @@ void http_parser_pause(http_parser *parser, int paused);
 /* Checks if this is the final chunk of the body. */
 int http_body_is_final(const http_parser *parser);
 
+/* Checks if this is the final chunk of the headers. */
+int http_headers_is_final(const http_parser *parser);
+
 #ifdef __cplusplus
 }
 #endif
